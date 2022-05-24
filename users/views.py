@@ -5,6 +5,8 @@ from rest_framework_simplejwt.tokens import AccessToken
 from users.serializers import UserSerializer
 from .models import User
 from rest_framework.exceptions import AuthenticationFailed
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework import status
 import jwt
 
 class RegisterView(APIView):
@@ -35,3 +37,16 @@ class UserView(APIView):
             raise AuthenticationFailed('Could not verify token\'s authenticity!')
         user = User.objects.filter(id=user_id).first()
         return Response({"id": user.id ,"first_name": user.first_name, "last_name": user.last_name, "username": user.username, "email": user.email})
+
+class LogoutView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request):
+        try:
+            refresh_token = request.data["refresh"]
+            refresh_token = RefreshToken(refresh_token)
+            refresh_token.blacklist()
+
+            return Response(status=status.HTTP_205_RESET_CONTENT)
+        except Exception as e:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
