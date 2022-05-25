@@ -72,6 +72,15 @@ urlpatterns = [
 4. In settings.py of project's main app, add following:
 
 ```python
+INSTALLED_APPS = [
+    ...
+    # These needs to be added
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+    'users'
+]
+
 DATABASES={...}
 ...
 # This needs to be added
