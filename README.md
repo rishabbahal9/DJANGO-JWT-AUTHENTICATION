@@ -255,7 +255,10 @@ python manage.py test
 For test coverage report
 ```console
 coverage run --source='users' manage.py test && coverage report && coverage html
-# For test coverage report of multiple apps
+```
+
+For test coverage report of multiple apps
+```console
 coverage run --source='users, your_app, your_app2' manage.py test && coverage report && coverage html
 ```
 
