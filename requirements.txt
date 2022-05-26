@@ -1,8 +1,12 @@
 asgiref==3.5.1
+autopep8==1.6.0
+coverage==6.4
 Django==3.2.13
 djangorestframework==3.13.1
 djangorestframework-simplejwt==5.1.0
+pycodestyle==2.8.0
 PyJWT==2.4.0
 pytz==2022.1
 sqlparse==0.4.2
+toml==0.10.2
 typing_extensions==4.2.0
