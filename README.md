@@ -259,8 +259,8 @@ coverage run --source='users' manage.py test && coverage report && coverage html
 coverage run --source='users, your_app, your_app2' manage.py test && coverage report && coverage html
 ```
 
-https://www.youtube.com/watch?v=17KdirMbmHY
-https://github.com/jazzband/djangorestframework-simplejwt/blob/master/tests/test_authentication.py
+* https://www.youtube.com/watch?v=17KdirMbmHY
+* https://github.com/jazzband/djangorestframework-simplejwt/blob/master/tests/test_authentication.py
 
 ## References
 1. https://django-rest-framework-simplejwt.readthedocs.io/en/latest/
