@@ -246,6 +246,10 @@ class TestView(APIView):
         return Response(content)
 
 ```
+
+## How to fix Django cors error
+https://dzone.com/articles/how-to-fix-django-cors-error
+
 ## Testing
 
 To run tests:
