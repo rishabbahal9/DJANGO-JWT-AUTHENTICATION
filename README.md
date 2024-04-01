@@ -1,6 +1,11 @@
-# RESUME OPTIMIZER - Django Backend APIs
+# Django JWT authentication with simple jwt (Refresh and Access tokens)
 
-This project is based on 
+This is a boiler plate code to get started with Django authentication.
+This project can be used in 2 ways:
+
+1. Using this project as boiler plate code to get started with your project. It has **users** app already integrated which has JWT authentication configured with main project.
+
+2. Take **users** app from this project, then plug and play it with your project.
 
 ## Frontend
 Optional Boiler plate frontend for this project is available at [frontend](https://github.com/rishabbahal9/FRONTEND-FOR-DJANGO-JWT-AUTHENTICATION.git). It is made on Angular, and it has complete user authentication with this project's APIs.
